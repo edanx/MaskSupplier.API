@@ -7,6 +7,6 @@ namespace MaskSupplier.Domain.Interfaces
 {
     public interface ICityRepository : IRepository<City>
     {
-        List<City> GetWithSupplierAndMasks();
+        City GetWithSupplierAndMasks(long id);
     }
 }

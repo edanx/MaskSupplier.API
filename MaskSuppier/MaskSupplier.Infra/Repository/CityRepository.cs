@@ -15,9 +15,9 @@ namespace MaskSupplier.Infra.Repository
         {
         }
 
-        public List<City> GetWithSupplierAndMasks()
+        public City GetWithSupplierAndMasks(long id)
         {
-            return DbSet.Include(x => x.Suppliers).ThenInclude(x => x.Masks).ToList() ;
+            return DbSet.Where(x => x.Id == id).Include(x => x.Suppliers).ThenInclude(x => x.Masks).FirstOrDefault() ;
         }
     }
 }

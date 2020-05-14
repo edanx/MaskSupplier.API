@@ -1,4 +1,5 @@
 ﻿using MaskSupplier.Domain.Queries.City.GetCity;
+using MaskSupplier.Domain.Queries.City.GetCityById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -20,6 +21,12 @@ namespace MaskSupplier.API.Controllers
         public Task<List<GetCityQueryResponse>> Get()
         {
             return _mediator.Send(new GetCityQuery());
+        }
+        
+        [HttpGet("{id}")]
+        public Task<GetCityByIdQueryResponse> Get(long id)
+        {
+            return _mediator.Send(new GetCityByIdQuery(id));
         }
     }
 }
