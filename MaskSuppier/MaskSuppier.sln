@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9D880B65-122A-4DBF-90F8-8F0E02D5D3EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{608228BC-B7CD-4302-95DF-F79E0B39AAFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{B7048B2E-8C5D-4F88-BC46-67800E5F7012}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskSupplier.Domain", "MaskSupplier.Domain\MaskSupplier.Domain.csproj", "{4AC99480-E218-4EA0-9C71-AB9290A4FD74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskSupplier.Infra", "MaskSupplier.Infra\MaskSupplier.Infra.csproj", "{D712187E-C11C-413B-8851-C502829CED8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskSupplier.API", "MaskSupplier.API\MaskSupplier.API.csproj", "{708E7117-632D-4E56-AC4E-A0A6B24435B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{ED213036-0E1A-4DE3-A724-4E2FE5847240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskSupplier.CrossCutting", "MaskSupplier.CrossCutting\MaskSupplier.CrossCutting.csproj", "{2AF8069B-DE42-4D20-A3C6-C407616C359B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AC99480-E218-4EA0-9C71-AB9290A4FD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC99480-E218-4EA0-9C71-AB9290A4FD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC99480-E218-4EA0-9C71-AB9290A4FD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC99480-E218-4EA0-9C71-AB9290A4FD74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D712187E-C11C-413B-8851-C502829CED8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D712187E-C11C-413B-8851-C502829CED8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D712187E-C11C-413B-8851-C502829CED8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D712187E-C11C-413B-8851-C502829CED8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708E7117-632D-4E56-AC4E-A0A6B24435B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708E7117-632D-4E56-AC4E-A0A6B24435B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708E7117-632D-4E56-AC4E-A0A6B24435B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708E7117-632D-4E56-AC4E-A0A6B24435B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF8069B-DE42-4D20-A3C6-C407616C359B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF8069B-DE42-4D20-A3C6-C407616C359B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF8069B-DE42-4D20-A3C6-C407616C359B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF8069B-DE42-4D20-A3C6-C407616C359B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AC99480-E218-4EA0-9C71-AB9290A4FD74} = {608228BC-B7CD-4302-95DF-F79E0B39AAFA}
+		{D712187E-C11C-413B-8851-C502829CED8B} = {B7048B2E-8C5D-4F88-BC46-67800E5F7012}
+		{708E7117-632D-4E56-AC4E-A0A6B24435B5} = {9D880B65-122A-4DBF-90F8-8F0E02D5D3EE}
+		{2AF8069B-DE42-4D20-A3C6-C407616C359B} = {ED213036-0E1A-4DE3-A724-4E2FE5847240}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44E50D7A-3F68-43A6-9E6C-9B0ABA1FFDFC}
+	EndGlobalSection
+EndGlobal
