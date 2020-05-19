@@ -10,5 +10,6 @@ namespace MaskSupplier.Domain.Queries.City.GetCity
         public string Name { get; set; }
         public string ZipCode { get; set; }
         public int Infecteds { get; set; }
+        public string Risk { get; set; }
     }
 }

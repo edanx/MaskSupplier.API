@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="MediatR" Version="8.0.1" />
+    <ProjectReference Include="..\MaskSupplier.Service\MaskSupplier.Service.csproj" />
   </ItemGroup>
 
 </Project>

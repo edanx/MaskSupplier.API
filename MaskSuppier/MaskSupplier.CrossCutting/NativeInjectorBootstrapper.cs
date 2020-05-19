@@ -1,6 +1,8 @@
 ﻿using MaskSupplier.Domain.Interfaces;
 using MaskSupplier.Domain.Queries.City.GetCity;
 using MaskSupplier.Infra.Repository;
+using MaskSupplier.Service;
+using MaskSupplier.Service.Interface;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,9 @@ namespace MaskSupplier.CrossCutting
         public static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<ICityRepository, CityRepository>();
+            services.AddScoped<ISupplierRepository, SupplierRepository>();
+            services.AddScoped<IMaskRepository, MaskRepository>();
+            services.AddScoped<ICityRiskService, CityRiskService>();
             
         }
 

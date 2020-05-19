@@ -7,6 +7,11 @@
   <ItemGroup>
     <ProjectReference Include="..\MaskSupplier.Domain\MaskSupplier.Domain.csproj" />
     <ProjectReference Include="..\MaskSupplier.Infra\MaskSupplier.Infra.csproj" />
+    <ProjectReference Include="..\MaskSupplier.Service\MaskSupplier.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>

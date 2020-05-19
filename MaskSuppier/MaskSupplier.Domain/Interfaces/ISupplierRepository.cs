@@ -5,8 +5,7 @@ using System.Text;
 
 namespace MaskSupplier.Domain.Interfaces
 {
-    public interface ICityRepository : IRepository<City>
+    public interface ISupplierRepository : IRepository<Supplier>
     {
-        City GetByIdWithSupplierAndMasks(long id);
     }
 }

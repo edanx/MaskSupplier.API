@@ -11,7 +11,7 @@ namespace MaskSupplier.API.Configurations
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.AddAutoMapper(typeof(DomainToModelMappingProfile));
+            services.AddAutoMapper(typeof(DomainToModelMappingProfile), typeof(ModelToDomainMappingProfile));
         }
     }
 }

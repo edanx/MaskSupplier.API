@@ -50,7 +50,7 @@ namespace MaskSupplier.Infra.Repository
         }
 
         public void Dispose()
-        {
+            {
             Db.Dispose();
             GC.SuppressFinalize(this);
         }

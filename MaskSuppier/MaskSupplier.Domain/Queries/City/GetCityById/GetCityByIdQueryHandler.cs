@@ -21,7 +21,7 @@ namespace MaskSupplier.Domain.Queries.City.GetCityById
 
         public Task<GetCityByIdQueryResponse> Handle(GetCityByIdQuery request, CancellationToken cancellationToken)
         {
-            var result = _mapper.Map<GetCityByIdQueryResponse> (_cityRepository.GetWithSupplierAndMasks(request.Id));
+            var result = _mapper.Map<GetCityByIdQueryResponse> (_cityRepository.GetByIdWithSupplierAndMasks(request.Id));
             return Task.FromResult(result);
         }
     }
