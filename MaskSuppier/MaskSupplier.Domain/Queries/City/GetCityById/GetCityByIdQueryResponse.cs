@@ -1,7 +1,5 @@
-﻿using MaskSupplier.Domain.Dto;
-using System;
+﻿using MaskSupplier.Domain.Entities;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MaskSupplier.Domain.Queries.City.GetCityById
 {

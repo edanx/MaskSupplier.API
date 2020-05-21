@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MaskSupplier.API.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("[controller]")]
+    [Route("[controller]")]
     public class CityController : ControllerBase
     {
         private readonly IMediator _mediator;

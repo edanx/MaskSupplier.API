@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace MaskSupplier.Domain.Interfaces
+namespace MaskSupplier.Domain.Interfaces.Repository
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {

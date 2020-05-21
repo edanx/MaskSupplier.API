@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MaskSupplier.Domain\MaskSupplier.Domain.csproj" />
-    <ProjectReference Include="..\MaskSupplier.Infra\MaskSupplier.Infra.csproj" />
-    <ProjectReference Include="..\MaskSupplier.Service\MaskSupplier.Service.csproj" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <ProjectReference Include="..\MaskSupplier.Domain\MaskSupplier.Domain.csproj" />
+    <ProjectReference Include="..\MaskSupplier.Infra\MaskSupplier.Infra.csproj" />
   </ItemGroup>
 
 </Project>

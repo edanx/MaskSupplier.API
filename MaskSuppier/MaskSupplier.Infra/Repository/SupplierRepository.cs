@@ -1,9 +1,6 @@
-﻿using MaskSupplier.Domain.Interfaces;
-using MaskSupplier.Domain.Models;
+﻿using MaskSupplier.Domain.Entities;
+using MaskSupplier.Domain.Interfaces.Repository;
 using MaskSupplier.Infra.Context;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MaskSupplier.Infra.Repository
 {

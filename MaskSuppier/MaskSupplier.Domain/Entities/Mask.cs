@@ -1,4 +1,8 @@
-﻿namespace MaskSupplier.Infra.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MaskSupplier.Domain.Entities
 {
     public class Mask
     {
@@ -7,7 +11,6 @@
         public double Price { get; set; }
         public long SupplierId { get; set; }
 
-        public Supplier Supplier;
-
+        public Supplier Supplier { get; set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using MaskSupplier.Service;
 using NUnit.Framework;
-using System;
 
 namespace MaskSupplier.Test
 {

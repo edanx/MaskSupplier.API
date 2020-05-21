@@ -1,13 +1,8 @@
-﻿using MaskSupplier.Domain.Interfaces;
-using MaskSupplier.Domain.Queries.City.GetCity;
+﻿using MaskSupplier.Domain.Interfaces.Repository;
 using MaskSupplier.Infra.Repository;
 using MaskSupplier.Service;
-using MaskSupplier.Service.Interface;
+using MaskSupplier.Service.Interface.Services;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Text;
 
 namespace MaskSupplier.CrossCutting
 {

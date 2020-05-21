@@ -1,4 +1,4 @@
-﻿using MaskSupplier.Domain.Models;
+﻿using MaskSupplier.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MaskSupplier.Infra.Context
@@ -7,6 +7,7 @@ namespace MaskSupplier.Infra.Context
     {
         public MaskSupplierContext(DbContextOptions<MaskSupplierContext> options) : base(options)
         {
+            this.Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,16 +27,15 @@ namespace MaskSupplier.Infra.Context
                 entity.HasMany(d => d.Suppliers)
                     .WithOne(p => p.City)
                     .OnDelete(DeleteBehavior.Cascade);
+
+                entity.Ignore(d => d.Risk);
             });
             
             modelBuilder.Entity<Supplier>(entity =>
             {
                 entity.HasOne(d => d.City)
                     .WithMany(p => p.Suppliers);
-            });
 
-            modelBuilder.Entity<Supplier>(entity =>
-            {
                 entity.HasMany(d => d.Masks)
                     .WithOne(p => p.Supplier)
                     .HasForeignKey(d => d.SupplierId)

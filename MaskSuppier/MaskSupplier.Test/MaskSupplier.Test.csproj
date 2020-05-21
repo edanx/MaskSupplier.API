@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MaskSupplier.Service\MaskSupplier.Service.csproj" />
+    <ProjectReference Include="..\MaskSupplier.Domain\MaskSupplier.Domain.csproj" />
   </ItemGroup>
 
 </Project>

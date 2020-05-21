@@ -1,5 +1,5 @@
-﻿using MaskSupplier.Domain.Interfaces;
-using MaskSupplier.Domain.Models;
+﻿using MaskSupplier.Domain.Entities;
+using MaskSupplier.Domain.Interfaces.Repository;
 using MaskSupplier.Infra.Context;
 
 namespace MaskSupplier.Infra.Repository

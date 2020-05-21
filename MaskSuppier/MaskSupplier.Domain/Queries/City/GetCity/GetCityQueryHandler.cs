@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using MaskSupplier.Domain.Interfaces;
-using MaskSupplier.Service.Interface;
+using MaskSupplier.Domain.Interfaces.Repository;
+using MaskSupplier.Service.Interface.Services;
 using MediatR;
 using System.Collections.Generic;
 using System.Linq;

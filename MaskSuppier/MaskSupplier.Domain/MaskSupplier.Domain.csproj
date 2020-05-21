@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MaskSupplier.Service\MaskSupplier.Service.csproj" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Services\Services\" />
   </ItemGroup>
 
 </Project>

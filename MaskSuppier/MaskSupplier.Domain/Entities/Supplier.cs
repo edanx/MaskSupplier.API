@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
-namespace MaskSupplier.Domain.Dto
+namespace MaskSupplier.Domain.Entities
 {
     public class Supplier
     {

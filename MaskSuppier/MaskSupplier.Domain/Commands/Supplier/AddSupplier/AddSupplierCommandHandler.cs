@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using MaskSupplier.Domain.Interfaces;
+using MaskSupplier.Domain.Entities;
+using MaskSupplier.Domain.Interfaces.Repository;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,12 +21,12 @@ namespace MaskSupplier.Domain.Commands.Supplier.AddSupplier
         }
         public Task<Unit> Handle(AddSupplierCommand request, CancellationToken cancellationToken)
         {
-            var supplier = _mapper.Map<Models.Supplier>(request);
+            var supplier = _mapper.Map<Entities.Supplier>(request);
             _supplierRepository.Add(supplier);
             _supplierRepository.SaveChanges();
             foreach (var mask in request.Masks)
             {
-                var result = _mapper.Map<Domain.Models.Mask>(mask);
+                var result = _mapper.Map<Mask>(mask);
                 result.SupplierId = supplier.Id;
                 _maskRepository.Add(result);
             }

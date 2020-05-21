@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
-using MaskSupplier.Domain.Interfaces;
+using MaskSupplier.Domain.Interfaces.Repository;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 

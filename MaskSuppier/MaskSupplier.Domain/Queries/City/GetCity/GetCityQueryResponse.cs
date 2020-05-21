@@ -1,8 +1,4 @@
-﻿using MaskSupplier.Domain.Dto;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MaskSupplier.Domain.Queries.City.GetCity
+﻿namespace MaskSupplier.Domain.Queries.City.GetCity
 {
     public class GetCityQueryResponse
     {
